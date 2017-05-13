@@ -21,6 +21,8 @@ public class UI {
 
             String command = io.read("> ");
             control = basicCommands.getCommand(command).run();
+            String command = io.read( ">>> " );
+            control = basicCommands.getCommand(command).run();
         }
     }
 
