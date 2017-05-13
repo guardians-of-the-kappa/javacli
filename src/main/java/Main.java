@@ -1,11 +1,10 @@
-/**
-* Hello world!
-*
-*/
+import java.util.Scanner;
+import io.ConsoleIO;
+
 public class Main
 {
     public static void main( String [] args )
     {
-        System.out.println("Hello world!");
+        new UI(new ConsoleIO(new Scanner(System.in))).start();
     }
 }
