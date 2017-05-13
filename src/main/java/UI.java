@@ -1,27 +1,26 @@
+import commands.BasicCommands;
 import io.IO;
-import commands.Commands;
 
-public class UI
-{
+public class UI {
 
     IO io;
-    Commands commands;
+    BasicCommands basicCommands;
 
-    public UI( IO io )
-    {
+    public UI(IO io) {
+
         this.io = io;
-        commands = new Commands( io );
+        basicCommands = new BasicCommands(io);
     }
 
-    public void start()
-    {
-        boolean control = true;
-        while (control) {
-            io.write( "" );
-            io.write( "Type 'help' for a list of available commands" );
+    public void start() {
 
-            String command = io.read( "> " );
-            control = commands.get(command).run();
+        boolean control = true;
+        while(control) {
+            io.write("");
+            io.write("Type 'help' for a list of available basicCommands");
+
+            String command = io.read("> ");
+            control = basicCommands.getCommand(command).run();
         }
     }
 

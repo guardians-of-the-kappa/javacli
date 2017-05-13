@@ -1,10 +1,9 @@
 package io;
 
-public interface IO
-{
+public interface IO {
 
-    public String read( String input );
+    public String read(String input);
 
-    public void write( String output );
+    public void write(String output);
 
 }
