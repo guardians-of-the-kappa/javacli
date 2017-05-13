@@ -20,7 +20,7 @@ public class UI
             io.write( "" );
             io.write( "Type 'help' for a list of available commands" );
 
-            String command = io.read( "> " );
+            String command = io.read( ">>> " );
             control = commands.get(command).run();
         }
     }
