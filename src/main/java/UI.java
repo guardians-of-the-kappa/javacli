@@ -19,8 +19,6 @@ public class UI {
             io.write("");
             io.write("Type 'help' for a list of available basicCommands");
 
-            String command = io.read("> ");
-            control = basicCommands.getCommand(command).run();
             String command = io.read( ">>> " );
             control = basicCommands.getCommand(command).run();
         }
