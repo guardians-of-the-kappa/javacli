@@ -23,5 +23,4 @@ public class ConsoleIO implements IO {
 
         System.out.println(output);
     }
-
 }

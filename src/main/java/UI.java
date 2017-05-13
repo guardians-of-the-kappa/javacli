@@ -3,8 +3,8 @@ import io.IO;
 
 public class UI {
 
-    IO io;
-    BasicCommands basicCommands;
+    private IO io;
+    private BasicCommands basicCommands;
 
     public UI(IO io) {
 
