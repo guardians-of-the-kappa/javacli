@@ -1,5 +1,9 @@
 language: java
 
-mvn clean install
+jdk:
+  - oraclejdk8
 
-mvn test
+script:
+  mvn clean install
+
+  mvn test
